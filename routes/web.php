@@ -99,3 +99,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/addquizzes','BackendController@addquizzes')->middleware('role:Trainer');
 Route::get('/grades','BackendController@grades')->middleware('role:Mentor');
+
+Route::get('/mine', function(){
+	echo "I am mine ";
+})
